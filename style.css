@@ -30,12 +30,27 @@ body{
     text-decoration: none;
 }
 
+#bio{
+    color: #bbb;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    max-width: 675px;
+    width: 100%;
+    text-align: center;
+    margin:0 auto;
+    text-decoration: none;
+}
+
 #links{
     max-width: 675px;
     width: auto;
     display: block;
     margin: 27px auto;
 }
+
 .link{
     display: block;
     background-color: var(--accentColor);

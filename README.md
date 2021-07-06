@@ -1,10 +1,23 @@
+# Changelog (of this 'Notice' File in accordance with the inluded Apache License as well as other files contained in this repo)
+
+July 5th, 2021: 
+- Removed the ./Templates directory (after copying the dark theme files up)
+- Modified the README.md (in interpretation of the license, considered the 'Notice' File)
+- Modified index.html
+- Updated style.css to have a 'bio' class
+- Added supporting files i.e. the profile image and the favicon
+
+# Notice about this repo
+
+This Github Pages site has used [LinkFree](https://github.com/MichaelBarney/LinkFree) as a foundational template and has modified source files as basis for this site. More information about LinkFree is available below. 
+
 # LinkFree
 
 A free and open source alternative to LinkTree!
 
 [Website](https://michaelbarney.github.io/LinkFree)
 
-<img src="https://i.imgur.com/B4LX0kY.png" alt="alt text" width="250px">
+*The original README.md contained a screenshot of LinkFree which can be found in the repo where this project was forked from [here](https://camo.githubusercontent.com/88716982b964effae8842ba1f4f3478cdbb84c2dcd9b1892931152e5d4a46554/68747470733a2f2f692e696d6775722e636f6d2f42344c58306b592e706e67).* 
 
 ## What is LinkFree?
 
