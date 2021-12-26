@@ -1,0 +1,310 @@
+/* ### z-index ###
+    backgroundFrame         1       (Big Graphics)
+    middleDivider           50      (Big Graphics)
+    professional + hover:   2       (Big Graphics)
+    creative + hover:       2       (Big Graphics)
+
+    day and day a           50      (Text)
+    night and night a       50      (Text)
+    day icons               3       (Logos and Links)
+    night icons             3       (Logos and Links)
+*/
+
+/* ### Menu ### */
+.hamburger {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    background: #ffffff;
+    border: #ffffff solid 3px;
+    z-index: 100;
+}
+
+.closeIcon {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #ffffff;
+    color: #ffffff;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.menuSectionDay {
+    font-family: 'Bodoni Moda', serif;
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.menuSectionNight {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 2.2rem;
+    color: #E6A5B3;
+    text-decoration: none;
+}
+
+.menuItemDay {
+    font-family: 'Bodoni Moda', serif;
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: #000000;
+    text-decoration: none;
+    text-indent: 50px;
+}
+
+.menuItemNight {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 2.2rem;
+    color: #E6A5B3;
+    text-decoration: none;
+    text-indent: 50px;
+}
+
+.menuItemDay:hover {
+    color: #838383
+}
+
+.menuItemNight:hover {
+    color: #000000;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+/* ### Text ### */
+.day {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 425%;
+    margin: 0;
+    position: absolute;
+    top: 50%;   /* Instructs that reference origin (x,y) is mid-screen vertically) */
+    left: 50%;  
+    transform: translate(-185%, -115%); /* offset for text from reference origin (x,y) as element's origin is uppermost top-left */
+    z-index: 50;
+}
+
+.day a {
+    text-decoration: none;
+    color: #000000;
+    z-index: 50;
+}
+
+.day:hover a {
+    color: #ffffff;
+}
+
+.dayMobile {
+    display: none; 
+}
+
+.night {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 450%;
+    color: #E6A5B3;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(85%, 15%);
+    z-index: 50;
+}
+
+.night a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #E6A5B3;
+    z-index: 50;
+}
+
+.night:hover a {
+    color: #000000; 
+}
+
+.nightMobile {
+    display: none;
+}
+
+span.copyright {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 75%;
+    color: #969696;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(178px, 275px);
+    z-index: 50;
+}
+
+/* ### Big graphics ### */
+.backgroundFrame {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+
+.middleDivider {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    z-index: 50;
+}
+
+.professional {
+    display: none;
+}
+
+.professionalMobile {
+    display: none; 
+}
+
+.day:hover ~ .professional {
+    min-height: 100px;      /* top three lines are flexbox and necessarily to vertically center the image in <span> without adding margin-top */
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .5;
+    z-index: 2;
+}
+
+.creative {
+    display: none;
+}
+
+.creativeMobile {
+    display: none;
+}
+
+.night:hover ~ .creative {
+    min-height: 100px;      /* top three lines are flexbox and necessarily to vertically center the image in <span> without adding margin-top */
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .5;
+    z-index: 2;
+}
+
+/* ### Logos and links ### */
+
+/* Removing the parent div class and separate ids for the day + night icons due to z-index overlapping issue */ 
+/* .dayIcons {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-850%);
+} */
+
+#dayLinkedIn {
+    max-width: 50px; 
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-850%, -170%);
+    z-index: 3;
+}
+
+#dayGithub {
+    max-width: 50px; 
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-850%, -45%);
+    z-index: 3;
+}
+
+#dayTwitter {
+    max-width: 50px; 
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-850%, 80%);
+    z-index: 3;
+}
+
+/* .nightIcons {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(840%);
+} */
+
+#nightTwitter {
+    max-width: 45px; 
+    transform: translate(840%, -170%);
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+}
+
+#nightSpotify {
+    max-width: 45px; 
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(840%, -45%);
+    z-index: 3;
+}
+
+#nightInsta {
+    max-width: 45px; 
+    transform: translate(840%, 80%);
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+}

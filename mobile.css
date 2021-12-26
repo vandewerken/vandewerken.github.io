@@ -1,0 +1,199 @@
+/* ### z-index ###
+    hamburger menu          100     (Menu)
+
+    middleDivider           50      (Big Graphics)
+    professional + hover:   2       (Big Graphics)
+    creative + hover:       2       (Big Graphics)
+
+    day and day a           50      (Text)
+    night and night a       50      (Text)
+*/
+
+/* ### Menu ### */
+.hamburger {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    background: #ffffff;
+    border: #ffffff solid 3px;
+    z-index: 100;
+}
+
+.closeIcon {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #ffffff;
+    color: #ffffff;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.menuSectionDay {
+    font-family: 'Bodoni Moda', serif;
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.menuSectionNight {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 2.2rem;
+    color: #E6A5B3;
+    text-decoration: none;
+}
+
+.menuItemDay {
+    font-family: 'Bodoni Moda', serif;
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: #000000;
+    text-decoration: none;
+    text-indent: 10%;
+}
+
+.menuItemNight {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 2.2rem;
+    color: #E6A5B3;
+    text-decoration: none;
+    text-indent: 10%;
+}
+
+.menuItemDay:hover {
+    color: #838383
+}
+
+.menuItemNight:hover {
+    color: #000000;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+/* ### Text ### */
+.dayMobile {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 425%;
+    margin: 0;
+    position: absolute;
+    top: 50%;   /* Instructs that reference origin (x,y) is mid-screen vertically) */
+    left: 50%;  
+    transform: translate(-50%, -145%); /* offset for text from reference origin (x,y) as element's origin is uppermost top-left */
+    padding: 0;
+    z-index: 50;
+}
+
+.dayMobile a {
+    text-decoration: none;
+    color: #000000;
+    z-index: 50;
+}
+
+.day {
+    display: none;
+}
+
+.nightMobile {
+    font-family: 'Amatic SC', cursive;
+    font-size: 450%;
+    color: #E6A5B3;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, 45%);
+    z-index: 50;
+}
+
+.nightMobile a {
+    text-decoration: none;
+    color: #E6A5B3;
+    z-index: 50;
+}
+
+.night {
+    display: none;
+}
+
+span.copyright {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 75%;
+    color: #969696;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 50;
+    transform: translate(-50%);
+}
+
+/* ### Big graphics ### */
+
+.backgroundFrame {
+    display: none;
+}
+
+.middleDivider {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 5px;
+    z-index: 50;
+}
+
+.professional {
+    display: none;
+}
+
+.creative {
+    display: none; 
+}
+
+/* ### Logos and links ### */
+
+#dayLinkedIn {
+    display: none;
+}
+
+#dayGithub {
+    display: none;
+}
+
+#dayTwitter {
+    display: none;
+}
+
+#nightTwitter {
+    display: none;
+}
+
+#nightSpotify {
+    display: none;
+}
+
+#nightInsta {
+    display: none;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
+        <link rel='stylesheet' media='screen and (min-width: 1125px)' href='./desktop.css' />
+        <link rel='stylesheet' media='screen and (max-width: 1125px)' href='./mobile.css' />
+        <title>CVdW Portfolio</title>
+        <meta name='description' content='Professional and creative portfolio for Christian Van de Werken'>
+        <meta property='og:title' content='CVdW Portfolio'>
+        <meta property='og:type' content='website'>
+        <meta property='og:url' content='https://werken.com'>
+        <meta property='og:image' content=''>  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bodoni+Moda&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        </head>
+    <body>
+        <ul class='menu' media='screen and (max-width: 850px)'>
+            <li><a class='menuSectionDay'>day</a></li>
+            <li><a class='menuItemDay' href='https://linkedin.com/in/ChristianVdW/'>linkedin</a></li>
+            <li><a class='menuItemDay' href='https://github.com/vandewerken/'>github</a></li>
+            <li><a class='menuItemDay' href='https://twitter.com/therealvdw/'>twitter @therealvdw</a></li>
+            <li><a class='menuSectionNight'>night</a></li>
+            <li><a class='menuItemNight' href='https://twitter.com/sassyfm/'>twitter @sassyfm</a></li>
+            <li><a class='menuItemNight' href='https://open.spotify.com/user/123008064?si=696571589fd54f2a'>spotify</a></li>
+            <li><a class='menuItemNight' href='https://www.instagram.com/werkendesign/'>instagram</a></li>            
+        </ul>
+        <button class='hamburger'>
+            <i class='menuIcon material-icons'>menu</i>
+            <i class='closeIcon material-icons'>close</i>
+        </button>
+        <script>
+            const menu = document.querySelector(".menu");
+            const menuItems = document.querySelectorAll(".menuItem");
+            const hamburger = document.querySelector(".hamburger");
+            const closeIcon = document.querySelector(".closeIcon");
+            const menuIcon = document.querySelector(".menuIcon");
+
+            closeIcon.style.display = "none"; 
+            
+            function toggleMenu() {
+                if (menu.classList.contains("showMenu")) {
+                    menu.classList.remove("showMenu");
+                    closeIcon.style.display = "none";
+                    menuIcon.style.display = "block";
+                } else {
+                    menu.classList.add("showMenu");
+                    closeIcon.style.display = "block";
+                    menuIcon.style.display = "none";
+                }
+            }
+
+            hamburger.addEventListener("click", toggleMenu);
+
+            menuItems.forEach( 
+                function(menuItem) { 
+                    menuItem.addEventListener("click", toggleMenu);
+                }
+            )
+        </script>
+        
+        <div><img src='./media/frame.png' class='backgroundFrame' media='screen and (max-width: 850px)'></div>
+        <div><img src='./media/middleDivider.png' class='middleDivider'></div>
+        
+        <a href="https://linkedin.com/in/ChristianVdW/" target="_blank"><img src='./media/linkedin_gray.png' id='dayLinkedIn'></a>
+        <a href="https://github.com/vandewerken/" target="_blank"><img src='./media/github_gray.png' id='dayGithub'></a>
+        <a href="https://twitter.com/therealvdw/" target="_blank"><img src='./media/twitter_gray.png' id='dayTwitter'></a>
+        <a href="https://twitter.com/sassyfm/" target="_blank"><img src='./media/twitter_color.png' id='nightTwitter'></a>
+        <a href="https://open.spotify.com/user/123008064?si=696571589fd54f2a" target="_blank"><img src='./media/spotify_color.png' id='nightSpotify'></a>
+        <a href="https://www.instagram.com/werkendesign/" target="_blank"><img src='./media/insta_color.png' id='nightInsta'></a>
+        
+        <!-- For desktop size site-->
+        <p>
+            <span class='day'><a href='https://linkedin.com/in/ChristianVdW/'>day</a></span><span class='professional'><img src='./media/headshots/vdw-professional.png'/></span>
+        </p>
+        <p>
+            <span class='night'><a href='https://portfolio.werken.com/'>night</a></span><span class='creative'><img src='./media/headshots/vdw.png'></span>
+        </p>
+            <span class='copyright'>&copy; Christian Van de Werken 2021</span>
+        </p>
+
+        <!-- For mobile site (max width of 1125px) -->
+        <p>
+            <span class='dayMobile'><a href='https://linkedin.com/in/ChristianVdW/'>day</a></span>
+        </p>
+        <p>
+            <span class='nightMobile'><a href='https://portfolio.werken.com/'>night</a></span>
+        </p>
+            <span class='copyright'>&copy; Christian Van de Werken 2021</span>
+        </p>
+    </body> 
+
+    <!--"Day side" icons by Neil Hainsworth from iconfinder.com - thank you, I love your work!
+        "Night side" icons by Kalash from iconfinder.com - thank you, you're super creative!-->
+
+</html>
+
