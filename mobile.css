@@ -26,7 +26,7 @@
 
 .menu {
     position: fixed;
-    transform: translateY(-200%);
+    transform: translateY(-500%);
     transition: transform 0.2s;
     top: 0;
     left: 0;
