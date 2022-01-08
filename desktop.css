@@ -146,7 +146,7 @@
     display: none;
 }
 
-span.copyright {
+span.copyrightDesktop {
     font-family: 'Bodoni Moda', serif;
     font-size: 75%;
     color: #969696;
@@ -156,6 +156,10 @@ span.copyright {
     left: 50%;
     transform: translate(178px, 275px);
     z-index: 50;
+}
+
+span.copyrightMobile {
+    display: none;
 }
 
 /* ### Big graphics ### */

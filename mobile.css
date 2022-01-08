@@ -136,7 +136,11 @@
     display: none;
 }
 
-span.copyright {
+span.copyrightDesktop {
+    display: none;
+}
+
+span.copyrightMobile {
     font-family: 'Bodoni Moda', serif;
     font-size: 75%;
     color: #969696;
