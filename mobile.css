@@ -186,18 +186,14 @@ span.copyrightMobile {
     display: none;
 }
 
-#dayTwitter {
-    display: none;
-}
-
-#nightPortfolio {
-    display: none;
-}
-
-#nightSpotify {
+#nightBio {
     display: none;
 }
 
 #nightInsta {
+    display: none;
+}
+
+#nightSpotify {
     display: none;
 }
