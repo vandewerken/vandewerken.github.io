@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='shortcut icon' href='./media/favicon.ico' type='image/x-icon'/>
+        <link rel='stylesheet' media='screen and (min-width: 1125px)' href='./bioDesktop.css' />
+        <link rel='stylesheet' media='screen and (max-width: 1125px)' href='./bioMobile.css' />
+        <title>CVdW Bio</title>
+        <meta name='description' content='Bio + contact for Christian Van de Werken'>
+        <meta property='og:title' content='CVdW Bio'>
+        <meta property='og:type' content='website'>
+        <meta property='og:url' content='https://werken.com/bio'>
+        <meta property='og:image' content=''>  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bodoni+Moda&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        </head>
+    <body>
+        <ul class='menu' media='screen and (max-width: 850px)'>
+            <li><a class='menuSectionDay'>day</a></li>
+            <li><a class='menuItemDay' href='https://linkedin.com/in/ChristianVdW/'>linkedin</a></li>
+            <li><a class='menuItemDay' href='https://github.com/vandewerken/'>github</a></li>
+            <li><a class='menuSectionNight'>night</a></li>
+            <li><a class='menuItemNight' href='./bio.html'>bio</a></li>
+            <li><a class='menuItemNight' href='https://www.instagram.com/werkendesign/'>instagram</a></li>            
+            <li><a class='menuItemNight' href='https://open.spotify.com/user/123008064?si=696571589fd54f2a'>spotify</a></li>
+        </ul>
+        <button class='hamburger'>
+            <i class='menuIcon material-icons'>menu</i>
+            <i class='closeIcon material-icons'>close</i>
+        </button>
+        <script>
+            const menu = document.querySelector(".menu");
+            const menuItems = document.querySelectorAll(".menuItem");
+            const hamburger = document.querySelector(".hamburger");
+            const closeIcon = document.querySelector(".closeIcon");
+            const menuIcon = document.querySelector(".menuIcon");
+
+            closeIcon.style.display = "none"; 
+            
+            function toggleMenu() {
+                if (menu.classList.contains("showMenu")) {
+                    menu.classList.remove("showMenu");
+                    closeIcon.style.display = "none";
+                    menuIcon.style.display = "block";
+                } else {
+                    menu.classList.add("showMenu");
+                    closeIcon.style.display = "block";
+                    menuIcon.style.display = "none";
+                }
+            }
+
+            hamburger.addEventListener("click", toggleMenu);
+
+            menuItems.forEach( 
+                function(menuItem) { 
+                    menuItem.addEventListener("click", toggleMenu);
+                }
+            )
+        </script>
+        <!-- Back to homepage button -->
+        <div id='backToButton'>
+            <span class="material-symbols-outlined">
+                <a href='./index.html'>arrow_back_ios</a>
+            </span>
+        </div>
+        <div id='backToTextBox'>
+            <span class='backToText'>
+                <p><a href='./index.html'>werken.com</a></p>
+            </span>
+        </div>
+        <!-- Site contents -->
+        <div id='headerBox' class='headerBoxOpacity'>
+            <div id='bioHeader' class='bioHeaderOpacity'>
+                <span class='headerName'>
+                    <p>Christian Van de Werken</p>
+                </span>
+            </div>
+            <div id='pronounHeader' class='pronounHeaderOpacity'>
+                <span class='pronouns'>
+                    <p>he / him / <i>gurl</i></p>
+                </span>
+            </div>
+            <div id='tagHeader' class='tagHeaderOpacity'>
+                <span class='headerTags'>
+                    <p>Tech x gov by day, art by night <span class='increaseWeight'>|</span> Doting dog dad <span class='increaseWeight'>|</span> Equal blend of David, Alexis, and Moira <span class='increaseWeight'>|</span> Typical Aquarius <span class='increaseWeight'>|</span> Creating something cool at <span class='increaseWeight' style='display: inline;'><a href='https://sequin.earth'>sequin.earth</a></span> <span class='increaseWeight'>|</span> DC for now and NYC again someday...</p>
+                </span>
+            </div>
+        </div>
+        <div><img src='./media/headshots/goodTaste.png' class='bioImage'></div>
+        <div id='bioTextBox' class='bioTextBoxOpacity'>
+            <span class='bioText'>
+                <p>If you're on this page, you've likely seen my professional profile on <a href='https://linkedin.com/in/ChristianVdW/'>LinkedIn</a> as well as my technical CV on <a href='https://github.com/vandewerken/'>Github</a>. Here, I want to call out my creative work.<br /><br /> 
+
+                    In my spare time, I moonlight as an artist and I do a lot of mixed media usually involving acrylic painting, watercolor, inking, and illustration. Additionally, after over a decade-long hiatus, I've found my love of fashion again and have gotten back into designing and creating custom womenswear. In this area, I'm currently working on my side project <a href='https://sequin.earth'>sequin.earth</a> which explores the intersection of fashion and tech.<br /><br /> 
+                    
+                    I have some longterm runway and photoshoot aspirations for my designs and I can't wait to show the world once the collections are more complete. For a snippet of past work, take a quick hop over to my portfolio on Instagram <a href='https://www.instagram.com/werkendesign/'>Werken Design</a> or
+                    <script type="text/javascript">
+                    function decode(a) {
+                    return a.replace(/[a-zA-Z]/g, function(c){
+                        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) 
+                                                ? c : c - 26);
+                    })
+                    }; 
+                    function openMailer(element) {
+                    var y = decode("znvygb:qrfvta@jrexra.pbz");
+                    element.setAttribute("href", y);
+                    element.setAttribute("onclick", "");
+                    element.firstChild.nodeValue = "send me an email.";
+                    };
+                    </script>
+                    <a id="email" href=" " onclick='openMailer(this);'>send me an email.</a></p></body>
+                </p>
+            </span>
+        </div>
+        <!-- Copyright for both desktop and mobile pages-->
+        <div id='copyrightBoxDesktop'>
+            <span class='copyright'>
+                <p style='display:inline; font-weight: 500'>&copy;</p> <p style='display:inline; font-size: 85%'>Christian Van de Werken <script>document.write(new Date().getFullYear())</script></p>
+            </span>
+        </div>

@@ -1,0 +1,316 @@
+/* ### Global ### */
+body {
+    overflow-x: hidden; 
+}
+
+/* ### Menu ### */
+.hamburger {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    background: #ffffff;
+    border: #ffffff solid 3px;
+    z-index: 100;
+}
+
+.closeIcon {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    transform: translateY(-1000%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #ffffff;
+    color: #ffffff;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.menuSectionDay {
+    font-family: 'Bodoni Moda', serif;
+    display: block;
+    margin: 0rem 4rem;
+    font-size: 1.8rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.menuSectionNight {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 2.2rem;
+    color: #E6A5B3;
+    text-decoration: none;
+}
+
+.menuItemDay {
+    font-family: 'Bodoni Moda', serif;
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: #000000;
+    text-decoration: none;
+    text-indent: 50px;
+}
+
+.menuItemNight {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 2.2rem;
+    color: #E6A5B3;
+    text-decoration: none;
+    text-indent: 50px;
+}
+
+.menuItemDay:hover {
+    color: #838383
+}
+
+.menuItemNight:hover {
+    color: #000000;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+/* ### Other Links ### */
+
+#backToButton {
+    color: #ffffff;
+    top: 1rem;
+    padding: 15px;
+    z-index: 50;
+}
+
+#backToButton a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#backToTextBox {
+    border-radius: 10px;
+    min-width: 500px;
+    max-width: 600px;
+    min-height: 100px;
+    margin: 0;
+    transform: translate(6%, -58%);
+    z-index: 50;
+}
+
+#backToTextBox a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+span.backToText {
+    display: inline-block;
+    color: #ffffff;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 105%;
+    line-height: 16pt;
+    margin: 0;
+    z-index: 50;
+}
+
+#mobileBackButton {
+    min-width: 50px;
+    max-width: 50px;
+    color: #222222;
+    z-index: 50;
+}
+
+/* ### Text ### */
+
+.bioHeaderOpacity {
+    background: rgba(230, 165, 179, 0) /* Increase the last number to decrease transparency - currently this isn't being used because of the use of #headerBox */
+}
+
+#bioHeader {
+    border-radius: 10px;
+    min-width: 400px;
+    max-width: 500px;
+    min-height: 100px;
+    margin-top: 0px;
+    transform: translate(15%, 0%);
+    z-index: 5;
+}
+
+span.headerName {
+    color: #000000;
+    opacity: 1;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 600;
+    font-size: 400%;
+    z-index: 101;
+}
+
+.pronounHeaderOpacity {
+    background: rgba(230, 165, 179, 0) /* Increase the last number to decrease transparency - currently this isn't being used because of the use of #headerBox */
+}
+
+#pronounHeader {
+    border-radius: 10px;
+    min-width: 400px;
+    max-width: 500px;
+    min-height: 100px;
+    margin-top: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translate(19%, -65%);
+    z-index: 5;
+}
+
+span.pronouns {
+    display: inline-block;
+    color: #000000;
+    opacity: 1;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 225%;
+    margin: 0;
+    z-index: 6;
+}
+
+.TagHeaderOpacity {
+    background: rgba(230, 165, 179, 0) /* Increase the last number to decrease transparency - currently this isn't being used because of the use of #headerBox */
+}
+
+#tagHeader {
+    border-radius: 10px;
+    min-width: 500px;
+    max-width: 750px;
+    min-height: 100px;
+    margin: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translate(3%, -95%);
+    z-index: 5;
+}
+
+span.headerTags {
+    display: inline-block;
+    color: #000000;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 135%;
+    line-height: 22pt;
+    margin-top: 300%;
+    margin-left: 7.25%;
+    z-index: 6;
+}
+
+span.headerTags a {
+    color: #41A0AD; /* Original color choice: #41A0AD */
+    font-weight: 400;
+    text-decoration: none;
+}
+
+span.increaseWeight {
+    font-weight: 500;
+}
+
+span.increaseWeight a {
+    font-weight: 500;
+}
+
+.bioTextBoxOpacity {
+    background: rgba(230, 165, 179, 0) /* Increase the last number to decrease transparency - currently this isn't being used because of the use of #headerBox */
+}
+
+#bioTextBox {
+    border-radius: 10px;
+    min-width: 575px;
+    max-width: 850px;
+    min-height: 100px;
+    margin-right: 10%;
+    position: absolute;
+    margin-top: 0%;
+    transform: translate(2.5%, -35%);
+    z-index: 5;
+}
+
+span.bioText{
+    display: inline-block;
+    color: #000000;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 125%;
+    margin: 0%;
+    z-index: 6;
+}
+
+span.bioText a {
+    color: #41A0AD; /* Original color choice: #41A0AD */
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#copyrightBox {
+    border-radius: 25px;
+    min-width: 800px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 49;
+}
+
+span.copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #808080;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 50;
+}
+
+/* ### Big graphics ### */
+
+.headerBoxOpacity {
+    background: rgb(230, 165, 179); /* Why are you using a browser that doesn't suppoer RGBa? */
+    background: rgba(230, 165, 179, .3)
+}
+
+#headerBox {
+    min-width: 1125px;
+    min-height: 225px;
+    transform: translate(-5%, -70%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+
+.bioImage {
+    /* border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2; */
+    display: none;
+}
+
+/* ### Logos and links ### */
+
