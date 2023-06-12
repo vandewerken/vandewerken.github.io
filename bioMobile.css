@@ -204,12 +204,12 @@ span.pronouns {
 #tagHeader {
     border-radius: 10px;
     min-width: 500px;
-    max-width: 700px;
+    max-width: 625px;
     min-height: 100px;
     margin: 0%;
     position: absolute;
     top: -450%;
-    transform: translate(0%, -50.75%) scale(1.5);
+    transform: translate(1.5%, -40%) scale(1.5);
     transform-origin: 0 0;
     z-index: 5;
 }
@@ -248,7 +248,7 @@ span.increaseWeight a {
 #bioTextBox {
     border-radius: 10px;
     min-width: 575px;
-    max-width: 675px;
+    max-width: 625px;
     min-height: 100px;
     margin-right: 10%;
     position: absolute;
@@ -294,8 +294,7 @@ span.copyrightMobile {
     position: absolute;
     bottom: 25;
     text-align: center;
-    left: 50%;
-    transform: translate(-75%, 0) scale(1.5);
+    transform: translate(16%, 0) scale(1.5);
     z-index: 50;
     transform-origin: 0 0;
 }
