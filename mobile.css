@@ -13,11 +13,13 @@
 .hamburger {
     position: fixed;
     top: 1rem;
-    right: 1rem;
+    right: 2rem;
     padding: 4px;
     background: #ffffff;
     border: #ffffff solid 3px;
     z-index: 100;
+    transform: scale(1.5);
+    transform-origin: 0 0;
 }
 
 .closeIcon {
@@ -46,6 +48,8 @@
     font-size: 1.8rem;
     color: #000000;
     text-decoration: none;
+    transform: scale(1.5);
+    transform-origin: 0 0;
 }
 
 .menuSectionNight {
@@ -56,6 +60,8 @@
     font-size: 2.2rem;
     color: #E6A5B3;
     text-decoration: none;
+    transform: scale(1.5);
+    transform-origin: 0 0;
 }
 
 .menuItemDay {
@@ -66,6 +72,8 @@
     color: #000000;
     text-decoration: none;
     text-indent: 10%;
+    transform: scale(1.5);
+    transform-origin: 0 0;
 }
 
 .menuItemNight {
@@ -77,6 +85,8 @@
     color: #E6A5B3;
     text-decoration: none;
     text-indent: 10%;
+    transform: scale(1.5);
+    transform-origin: 0 0;
 }
 
 .menuItemDay:hover {
@@ -99,7 +109,7 @@
     position: absolute;
     top: 50%;   /* Instructs that reference origin (x,y) is mid-screen vertically) */
     left: 50%;  
-    transform: translate(-50%, -145%); /* offset for text from reference origin (x,y) as element's origin is uppermost top-left */
+    transform: translate(-50%, -145%) scale(1.5); /* offset for text from reference origin (x,y) as element's origin is uppermost top-left */
     padding: 0;
     z-index: 50;
 }
@@ -122,7 +132,7 @@
     position: absolute;
     top: 50%;
     left: 50%;  
-    transform: translate(-50%, 45%);
+    transform: translate(-50%, 45%) scale(1.5);
     z-index: 50;
 }
 

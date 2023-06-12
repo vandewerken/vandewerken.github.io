@@ -7,11 +7,13 @@ body {
 .hamburger {
     position: fixed;
     top: 1rem;
-    right: 1rem;
+    right: 3rem;
     padding: 4px;
     background: #ffffff;
     border: #ffffff solid 3px;
     z-index: 100;
+    transform: scale(1.5);
+    transform-origin: 0 0;
 }
 
 .closeIcon {
@@ -40,6 +42,8 @@ body {
     font-size: 1.8rem;
     color: #000000;
     text-decoration: none;
+    transform: scale(1.5);
+    transform-origin: 0 0;
 }
 
 .menuSectionNight {
@@ -50,6 +54,8 @@ body {
     font-size: 2.2rem;
     color: #E6A5B3;
     text-decoration: none;
+    transform: scale(1.5);
+    transform-origin: 0 0;
 }
 
 .menuItemDay {
@@ -60,6 +66,8 @@ body {
     color: #000000;
     text-decoration: none;
     text-indent: 50px;
+    transform: scale(1.5);
+    transform-origin: 0 0;
 }
 
 .menuItemNight {
@@ -71,6 +79,8 @@ body {
     color: #E6A5B3;
     text-decoration: none;
     text-indent: 50px;
+    transform: scale(1.5);
+    transform-origin: 0 0;
 }
 
 .menuItemDay:hover {
@@ -145,7 +155,8 @@ span.backToText {
     max-width: 500px;
     min-height: 100px;
     margin-top: 0px;
-    transform: translate(15%, 0%);
+    transform: translate(15%, 0%) scale(1.5);
+    transform-origin: 0 0;
     z-index: 5;
 }
 
@@ -170,7 +181,8 @@ span.headerName {
     margin-top: 0%;
     position: absolute;
     top: 50%;
-    transform: translate(19%, -65%);
+    transform: translate(19%, -125%) scale(1.5);
+    transform-origin: 0 0;
     z-index: 5;
 }
 
@@ -192,12 +204,13 @@ span.pronouns {
 #tagHeader {
     border-radius: 10px;
     min-width: 500px;
-    max-width: 750px;
+    max-width: 700px;
     min-height: 100px;
     margin: 0%;
     position: absolute;
-    top: 50%;
-    transform: translate(3%, -95%);
+    top: -450%;
+    transform: translate(0%, -50.75%) scale(1.5);
+    transform-origin: 0 0;
     z-index: 5;
 }
 
@@ -235,12 +248,13 @@ span.increaseWeight a {
 #bioTextBox {
     border-radius: 10px;
     min-width: 575px;
-    max-width: 850px;
+    max-width: 675px;
     min-height: 100px;
     margin-right: 10%;
     position: absolute;
     margin-top: 0%;
-    transform: translate(2.5%, -35%);
+    transform: translate(2.5%, -35%) scale(1.5);
+    transform-origin: 0 0;
     z-index: 5;
 }
 
@@ -263,7 +277,7 @@ span.bioText a {
 
 #copyrightBox {
     border-radius: 25px;
-    min-width: 800px;
+    min-width: 700px;
     margin: 0;
     position: absolute;
     bottom: 0;
@@ -278,11 +292,12 @@ span.copyright {
     color: #808080;
     margin: 0;
     position: absolute;
+    bottom: 25;
     text-align: center;
-    bottom: 0;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-75%, 0) scale(1.5);
     z-index: 50;
+    transform-origin: 0 0;
 }
 
 /* ### Big graphics ### */
@@ -294,8 +309,8 @@ span.copyright {
 
 #headerBox {
     min-width: 1125px;
-    min-height: 225px;
-    transform: translate(-5%, -70%);
+    min-height: 410px;
+    transform: translate(-5%, -35%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 1;
 }
