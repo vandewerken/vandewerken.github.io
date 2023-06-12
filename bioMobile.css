@@ -275,7 +275,7 @@ span.bioText a {
     text-decoration: none;
 }
 
-#copyrightBox {
+#copyrightBoxMobile {
     border-radius: 25px;
     min-width: 700px;
     margin: 0;
@@ -286,7 +286,7 @@ span.bioText a {
     z-index: 49;
 }
 
-span.copyright {
+span.copyrightMobile {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: #808080;
@@ -298,6 +298,11 @@ span.copyright {
     transform: translate(-75%, 0) scale(1.5);
     z-index: 50;
     transform-origin: 0 0;
+}
+
+
+span.copyrightDesktop {
+    display: none;
 }
 
 /* ### Big graphics ### */

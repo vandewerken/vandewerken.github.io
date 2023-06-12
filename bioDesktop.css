@@ -252,7 +252,7 @@ span.bioText a {
     text-decoration: none;
 }
 
-#copyrightBox {
+#copyrightBoxDesktop {
     border-radius: 25px;
     min-width: 800px;
     margin: 0;
@@ -263,7 +263,7 @@ span.bioText a {
     z-index: 49;
 }
 
-span.copyright {
+span.copyrightDesktop {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: #808080;
@@ -274,6 +274,14 @@ span.copyright {
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 50;
+}
+
+#copyrightBoxMobile {
+    display: none;
+}
+
+span.copyrightMobile {
+    display: none;
 }
 
 /* ### Big graphics ### */
