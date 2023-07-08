@@ -98,27 +98,26 @@
                     For a snippet of past work, take a quick hop over to my abridged portfolio on Instagram at <a href='https://www.instagram.com/werkendesign/'>Werken Design</a> or
                     <script type="text/javascript">
                     function decode(a) {
-                    return a.replace(/[a-zA-Z]/g, function(c){
-                        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) 
-                                                ? c : c - 26);
-                    })
-                    }; 
+                        return a.replace(/[a-zA-Z]/g, function(c) {
+                            return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+                        })
+                    } 
                     function openMailer(element) {
-                    var y = decode("znvygb:qrfvta@jrexra.pbz");
-                    element.setAttribute("href", y);
-                    element.setAttribute("onclick", "");
-                    element.firstChild.nodeValue = "send me an email.";
-                    };
+                        var y = decode("znvygb:qrfvta@jrexra.pbz");
+                        element.setAttribute("href", y);
+                        element.setAttribute("onclick", "");
+                        element.firstChild.nodeValue = "send me an email.";
+                    }
                     </script>
                     <a id="email" href=" " onclick='openMailer(this);'>send me an email.</a></p></body>
                 </p>
             </span>
-            <!-- Copyright for mobile pages -->
-            <div id='copyrightBoxMobile'>
-                <span class='copyrightMobile'>
-                    <p style='display:inline; font-weight: 500'>&copy;</p> <p style='display:inline; font-size: 85%'>Christian Van de Werken <script>document.write(new Date().getFullYear())</script></p>
-                </span>
-            </div>
+        </div>
+        <!-- Copyright for mobile pages -->
+        <div id='copyrightBoxMobile'>
+            <span class='copyrightMobile'>
+                <p style='display:inline; font-weight: 500'>&copy;</p> <p style='display:inline; font-size: 85%'>Christian Van de Werken <script>document.write(new Date().getFullYear())</script></p>
+            </span>
         </div>
         <!-- Copyright for desktop pages -->
         <div id='copyrightBoxDesktop'>
@@ -126,3 +125,5 @@
                 <p style='display:inline; font-weight: 500'>&copy;</p> <p style='display:inline; font-size: 85%'>Christian Van de Werken <script>document.write(new Date().getFullYear())</script></p>
             </span>
         </div>
+    </body>
+</html>

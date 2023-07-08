@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='shortcut icon' href='./media/pawFavi.ico' type='image/x-icon'/>
+        <link rel='stylesheet' media='screen and (min-width: 1125px)' href='./lfDesktop.css' />
+        <link rel='stylesheet' media='screen and (max-width: 1125px)' href='./lfMobile.css' />
+        <title>Lost and Found</title>
+        <meta name='description' content='VdW Lost and Found'>
+        <meta property='og:title' content='VdW Lost and Found'>
+        <meta property='og:type' content='website'>
+        <meta property='og:url' content='https://found.werken.com/'>
+        <meta property='og:image' content=''>  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        </head>
+    <body>
+        <div><img src='./media/dog/argos1.png' class='argos1' media='screen and (max-width: 850px)'></div>
+        <div><img src='./media/dog/argos2.png' class='argos2' media='screen and (max-width: 850px)'></div>
+        <div><img src='./media/dog/argos3.png' class='argos3' media='screen and (max-width: 850px)'></div>
+        <!-- Site contents -->
+        <div id='headerPlacement'>
+            <h1>You found my dog, Argos!</h1>
+        </div>
+        <div id='link1Shadow' class='linkBoxRetroFrame'></div>
+        <div id='link1' class='linkBoxColor'>    
+            <div class='linkText' id="link1RecolorText">Info about Argos</div>
+        </div>
+        <div id='link2Shadow' class='linkBoxRetroFrame'></div>
+        <div id='link2' class='linkBoxColor'>    
+            <div class='linkText'><p id='callLinkText'>Call me!</p></div>
+        </div>
+        <div id='link3Shadow' class='linkBoxRetroFrame'></div>
+        <div id='link3' class='linkBoxColor'>    
+            <div class='linkText'><a id="email" href=" " onclick='openMailer(this);'>Email me</a></div>
+        </div>
+        <div id='link4Shadow' class='linkBoxRetroFrame'></div>
+        <div id='link4' class='linkBoxColor'>    
+            <div class='linkText'><a id="email" href="https://werken.com/" target="_blank">Other ways to contact me</a></div> <!-- #email existed prior to needing this for a URL so leaving the naming as is -->
+        </div>
+        <a href="https://www.instagram.com/bigapplegogo/" target="_blank"><img src='./media/dog/instaLogoFound.png' id='gogoInsta'></a>
+        <div id="argosInfoBox">
+            <button id="hideInfoBox" onclick="showArgosInfoBox()"><span class="material-symbols-rounded">close</span></button>
+            <div id="argosBoxH1">
+                Argos is...     
+            </div>
+            <div id="argosBoxH2">
+                A proud district doggo <span class='increaseWeight'>|</span> Former big 🍎 pooch <span class='increaseWeight'>|</span> The smiliest chocolate lab ever!
+            </div>
+            <hr class="argsDiv">
+            <div id="argosParagraphText">
+                Hi! I'm Argos! Thanks so much for finding me... My dad is worried! Please contact him so he knows I'm alright. 
+            </div>
+            <div id="argosBoxH3">
+                Likes
+            </div>
+            <div id="argosParagraphText">
+                I <span class='increaseWeight'><em>LOVE</em></span> people and belly rubs. I like other dogs, but I like to play rough - I promise I'm just playing though! I also like to go on super long walks, play in water, and play fetch - if you have a tennis ball, I can happily chase it for hours. I like kids because they're small like me! When it comes to food, I'm picky but have perfect manners. If you give me food, please consult <a href="https://www.akc.org/expert-advice/nutrition/human-foods-dogs-can-and-cant-eat/" target="_blank">this guide</a> and <a href="https://www.akc.org/expert-advice/nutrition/fruits-vegetables-dogs-can-and-cant-eat/" target="_blank">this guide</a> first for safe and unsafe foods, but when in doubt, mashed sweet potato without the skin is always a treat for me. Please note: I'm allergic to rawhide.
+            </div>
+            <div id="argosBoxH3">
+                Dislikes
+            </div>            
+            <div id="argosParagraphText">
+                I'm not my normal self when I'm with big groups of dogs (like a dog park). Similarly, I don't do well with meeting other dogs on leash, but if you just keep my lead taut, I will calmly walk past other dogs on the sidewalk. I <em>really</em> don't like loud noises and I especially hate loud construction sounds, so please try to keep me somewhere quiet while we wait for my dad.
+            </div>
+            <div id="argosBoxH3">
+                Additional details
+            </div>            
+            <div id="argosParagraphText">
+                <li><span class='increaseWeight'>My vet: </span><a href="https://www.clarendonanimalcare.com/" target="_blank">Clarendon Animal Care (North Arlington)</a></li>
+                <li><span class='increaseWeight'>Neutered: </span>Yes</li>
+                <li><span class='increaseWeight'>Fun fact: </span>I've never met a cat</li>
+                <li><span class='increaseWeight'>Can't reach my dad? </span><a id="email" href=" " onclick='openMailerUncle(this);'>Contact my uncle!</a></li>
+            </div>
+        </div>
+        <button id="showInfoBox" onclick="showArgosInfoBox()" onmouseover="recolorInfoHoverText()" onmouseleave="resetInfoHoverText()"></button>
+        <button id="callButton" onclick="changeText()" onmouseover="recolorHoverText()" onmouseleave="resetHoverText()"></button>
+        <script type="text/javascript">
+        //
+        // Argos Info Box
+        //
+            function recolorInfoHoverText() {
+                document.getElementById('link1RecolorText').style.color = '#016a74'; // Make sure that if you change the color of .linkText:hover in the stylesheet, you also change this value to match
+            }
+            function resetInfoHoverText() {
+                document.getElementById('link1RecolorText').style.color = '#000000'; // Make sure that if you change the color of .linkText:hover in the stylesheet, you also change this value to match
+            }
+            function showArgosInfoBox() {
+                let argosInfoBox = document.getElementById('argosInfoBox');
+                argosInfoBox.classList.toggle('fade');
+            }
+            // Swapping the below function for the one above with a fade for better UX (an immediate "on/off" to show the infobox doesn't really give the user any indication that there was a change)
+            //function showInfoBox() { document.getElementById("argosInfoBox").style.display = 'block'; } 
+                //let argosInfoBox = document.getElementById('argosInfoBox');
+                //document.getElementById('showInfoBox').onclick = function() {
+                //    argosInfoBox.classList.toggle('fade');
+                //};
+        //
+        // Call me button
+        //
+            function recolorHoverText() {
+                document.getElementById('callLinkText').style.color = '#016a74'; // Make sure that if you change the color of .linkText:hover in the stylesheet, you also change this value to match
+            }
+            function resetHoverText() {
+                document.getElementById('callLinkText').style.color = '#000000'; // Make sure that if you change the color of .linkText:hover in the stylesheet, you also change this value to match
+            }
+            function changeText() {
+                var buttonText = document.getElementById('callLinkText').textContent;
+                if (buttonText == 'Call me!') {
+                    document.getElementById('callLinkText').textContent = 'Call me - my cell number is on his collar!';
+                } else {
+                    document.getElementById('callLinkText').textContent = 'Call me!';
+                }
+            }
+        //
+        // Email me button
+        //
+            function decode(a) {
+                return a.replace(/[a-zA-Z]/g, function(c) {
+                    return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+                })
+            } 
+            function openMailer(element) {
+                var y = decode("znvygb:tbtb@jrexra.pbz");
+                element.setAttribute("href", y);
+                element.setAttribute("onclick", "");
+                element.firstChild.nodeValue = "Email me";
+            }
+        //
+        // Contact uncle
+        //
+        function decode(a) {
+                return a.replace(/[a-zA-Z]/g, function(c) {
+                    return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+                })
+            } 
+            function openMailerUncle(element) {
+                var y = decode("znvygb:furezpuh@tznvy.pbz");
+                element.setAttribute("href", y);
+                element.setAttribute("onclick", "");
+                element.firstChild.nodeValue = "contact my uncle!";
+            }
+        </script>
+        <!-- Copyright for mobile pages -->
+        <div id='copyrightBoxMobile'>
+            <span class='copyrightMobile'>
+                <p style='display:inline; font-weight: 500'>&copy;</p> <p style='display:inline; font-size: 85%'>Christian Van de Werken <script>document.write(new Date().getFullYear())</script></p>
+            </span>
+        </div>
+        <!-- Copyright for desktop pages -->
+        <div id='copyrightBoxDesktop'>
+            <span class='copyrightDesktop'>
+                <p style='display:inline; font-weight: 500'>&copy;</p> <p style='display:inline; font-size: 85%'>Christian Van de Werken <script>document.write(new Date().getFullYear())</script></p>
+            </span>
+        </div>
+    </body>
+</html>
