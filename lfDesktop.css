@@ -124,7 +124,7 @@ h1 {
 }
 
 .linkText:hover {
-    color: rgb(0, 106, 128); /* Why are you using a browser that doesn't suppoer RGBa? */
+    color: rgb(0, 106, 128); /* Why are you using a browser that doesn't support RGBa? */
     color: rgba(1, 106, 116, 1);
 }
 
@@ -139,14 +139,14 @@ p {
 }
 
 #email:hover {
-    color: rgb(0, 106, 128); /* Why are you using a browser that doesn't suppoer RGBa? */
+    color: rgb(0, 106, 128); /* Why are you using a browser that doesn't support RGBa? */
     color: rgba(1, 106, 116, 1);
 }
 
 /* ### Big graphics / Buttons ### */
 
 .linkBoxColor {
-    background: rgb(255, 255, 255); /* Why are you using a browser that doesn't suppoer RGBa? */
+    background: rgb(255, 255, 255); /* Why are you using a browser that doesn't support RGBa? */
     background: rgba(255, 255, 255, 100);
 }
 
@@ -179,7 +179,7 @@ p {
 }
 
 #link2:hover {
-    color: rgb(0, 106, 128); /* Why are you using a browser that doesn't suppoer RGBa? */
+    color: rgb(0, 106, 128); /* Why are you using a browser that doesn't support RGBa? */
     color: rgba(1, 106, 116, 1);
 }
 
@@ -202,7 +202,7 @@ p {
 }
 
 .linkBoxRetroFrame {
-    background: rgb(0, 0, 0); /* Why are you using a browser that doesn't suppoer RGBa? */
+    background: rgb(0, 0, 0); /* Why are you using a browser that doesn't support RGBa? */
     background: rgba(0, 0, 0, 100);
 }
 
@@ -249,8 +249,8 @@ p {
 }
 
 #callButton {
-    background: rgb(255, 255, 255); /* Why are you using a browser that doesn't suppoer RGBa? */
-    opacity: 0; /* Why are you using a browser that doesn't suppoer RGBa? */
+    background: rgb(255, 255, 255); /* Why are you using a browser that doesn't support RGBa? */
+    opacity: 0; /* Why are you using a browser that doesn't support RGBa? */
     background: rgba(255, 255, 255, 0);
     border-radius: 10px;
     outline: none;
@@ -269,8 +269,8 @@ p {
 }
 
 #showInfoBox {
-    background: rgb(255, 255, 255); /* Why are you using a browser that doesn't suppoer RGBa? */
-    opacity: .5; /* Why are you using a browser that doesn't suppoer RGBa? */
+    background: rgb(255, 255, 255); /* Why are you using a browser that doesn't support RGBa? */
+    opacity: .5; /* Why are you using a browser that doesn't support RGBa? */
     background: rgba(255, 255, 255, 0);
     border-radius: 10px;
     outline: none;
@@ -330,8 +330,8 @@ p {
 }
 
 #argosInfoBox.fade {
-    background: rgb(0, 173, 189); /* Why are you using a browser that doesn't suppoer RGBa? */
-    opacity: 1; /* Why are you using a browser that doesn't suppoer RGBa? */
+    background: rgb(0, 173, 189); /* Why are you using a browser that doesn't support RGBa? */
+    opacity: 1; /* Why are you using a browser that doesn't support RGBa? */
     background: rgba(3, 128, 145, 1);
     border-radius: 25px;
     outline: .4rem rgba(0, 0, 0, 1);
