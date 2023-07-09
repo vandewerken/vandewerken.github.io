@@ -72,8 +72,8 @@ h1 {
     text-align: center;
     opacity: 1;
     font-family: 'Nabla', cursive;
-    font-size: 6rem;
-    line-height: 8rem;
+    font-size: 5rem;
+    line-height: 7rem;
     text-shadow: 
         6px 4px 6px rgba(1, 106, 116, .5), /* Bottom */
         /* -2px 2px 2px rgba(1, 96, 116, 1), Left */
@@ -309,9 +309,9 @@ p {
     outline: .4rem rgba(0, 0, 0, 1);
     outline-offset: -.2rem;
     outline-style: dashed;
-    height: 675px;
+    min-height: 55%;
     overflow: hidden;
-    width: 650px;
+    width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -336,7 +336,7 @@ hr.argsDiv {
     padding-left: 1rem;
     padding-top: .4rem;
     font-family: 'Nabla', cursive;
-    font-size: 225%;
+    font-size: 300%;
     text-shadow: 
         2px 1px 1px rgba(0, 0, 0, .5), /* Bottom */
         /* -2px 2px 2px rgba(1, 96, 116, 1), Left */
@@ -349,8 +349,8 @@ hr.argsDiv {
     padding-top: .4rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
-    font-size: 105%;
-    max-width: 625px;
+    font-size: 175%;
+    max-width: 95%;
     padding-bottom: .2rem;
     color:rgb(255, 255, 255);
 }
@@ -360,7 +360,7 @@ hr.argsDiv {
     padding-top: .4rem;
     font-family: 'Nabla', cursive;
     font-weight: 500;
-    font-size: 130%;
+    font-size: 175%;
     max-width: 625px;
     padding-bottom: .2rem;
     color:rgb(255, 255, 255);
@@ -381,8 +381,8 @@ span.increaseWeight {
     padding-top: .1rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    font-size: 105%;
-    max-width: 625px;
+    font-size: 175%;
+    max-width: 95%;
     color:rgb(255, 255, 255);
 }
 
@@ -411,7 +411,7 @@ span.material-symbols-rounded {
         'wght' 400,
         'GRAD' 0,
         'opsz' 48;
-    font-size: 85%;
+    font-size: 125%;
 }
 
 /* ### Copyright and Footer Elements ###*/
@@ -426,8 +426,8 @@ span.copyrightDesktop {
 
 #copyrightBoxMobile {
     border-radius: 25px;
-    min-width: 1150px;
-    max-width: 1150px;
+    min-width: 900px;
+    max-width: 900px;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -439,7 +439,7 @@ span.copyrightDesktop {
 
 span.copyrightMobile {
     font-family: 'Quicksand', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #ffffff;
     margin: 0;
     position: absolute;
