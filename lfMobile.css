@@ -310,7 +310,7 @@ p {
     outline: .4rem rgba(0, 0, 0, 1);
     outline-offset: -.2rem;
     outline-style: dashed;
-    min-height: 55%;
+    min-height: 65%;
     overflow: hidden;
     width: 90%;
     position: absolute;
