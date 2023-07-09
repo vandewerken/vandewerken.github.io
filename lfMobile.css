@@ -1,0 +1,451 @@
+/* ### Global Page Design */
+body {
+    background: rgb(239,56,151);
+    background: linear-gradient(45deg, rgba(239,56,151,1) 0%, rgba(5,208,235,1) 50%, rgba(235,209,16,1) 100%); /* Hex codes: #ef3897, #05d0eb, #ebd110*/
+    height: 100vh;
+    width: 95vw;
+    border: none;
+    overflow: hidden;
+}
+
+.argos1 {
+    height: 300px;      /* top three lines are flexbox and necessarily to vertically center the image in <span> without adding margin-top */
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 15%;
+    left: 50%;
+    transform: translate(-150%, -50%);
+    border-radius: 50%;
+    box-shadow: 0px 5px 4px rgba(50, 50, 50, 0.5);
+    z-index: 2;
+}
+
+.argos2 {
+    height: 400px;      /* top three lines are flexbox and necessarily to vertically center the image in <span> without adding margin-top */
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0px 5px 4px rgba(50, 50, 50, 0.5);
+    z-index: 3;
+}
+
+.argos3 {
+    height: 300px;      /* top three lines are flexbox and necessarily to vertically center the image in <span> without adding margin-top */
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 15%;
+    left: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0px 5px 4px rgba(50, 50, 50, 0.5);
+    z-index: 2;
+}
+
+/* ### Text ### */
+
+#headerPlacement {
+    position: absolute;
+    height: 100px;
+    left: 50%;
+    top: 23%;
+    transform: translate(-50%, 0%);
+    z-index: 6;
+}
+
+h1 {
+    width: 800px;
+    text-align: center;
+    opacity: 1;
+    font-family: 'Nabla', cursive;
+    font-size: 6rem;
+    line-height: 8rem;
+    text-shadow: 
+        6px 4px 6px rgba(1, 106, 116, .5), /* Bottom */
+        /* -2px 2px 2px rgba(1, 96, 116, 1), Left */
+        6px 10px 6px rgba(1, 106, 116, .5); /* Right */
+        /* -2px -2px 2px rgba(1, 96, 116, 1); Top */
+}
+
+.linkText {
+    color: #000000;
+    opacity: 1;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 45%);
+    min-width: 800px;
+    max-width: 800px;
+    text-align: center;
+    z-index: 6;
+}
+
+.linkText:hover {
+    color: rgb(0, 106, 128); /* Why are you using a browser that doesn't support RGBa? */
+    color: rgba(1, 106, 116, 1);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#email, #email:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+#email:hover {
+    color: rgb(0, 106, 128); /* Why are you using a browser that doesn't support RGBa? */
+    color: rgba(1, 106, 116, 1);
+}
+
+/* ### Big graphics / Buttons ### */
+
+.linkBoxColor {
+    background: rgb(255, 255, 255); /* Why are you using a browser that doesn't support RGBa? */
+    background: rgba(255, 255, 255, 100);
+}
+
+#link1, #link2, #link3, #link4 {
+    border-radius: 25px;
+    outline: solid rgb(0, 0, 0) 4px;
+    min-width: 800px;
+    max-width: 800px;
+    height: 100px;
+    margin: 0;
+    opacity: 100%;
+    z-index: 3;
+}
+
+#link1 {
+    cursor: default;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -175%);
+    z-index: 3;
+}
+
+#link2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    z-index: 3;
+}
+
+#link2:hover {
+    color: rgb(0, 106, 128); /* Why are you using a browser that doesn't support RGBa? */
+    color: rgba(1, 106, 116, 1);
+}
+
+#link3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 195%);
+    cursor: default;
+    z-index: 3;
+}
+
+#link4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 380%);
+    cursor: default !important;
+    z-index: 3;
+}
+
+.linkBoxRetroFrame {
+    background: rgb(0, 0, 0); /* Why are you using a browser that doesn't support RGBa? */
+    background: rgba(0, 0, 0, 100);
+}
+
+#link1Shadow, #link2Shadow, #link3Shadow, #link4Shadow {
+    border-radius: 25px;
+    min-width: 800px;
+    max-width: 800px;
+    height: 100px;
+    margin: 0;
+    box-shadow: 4px 4px 8px rgba(1, 106, 116, 1);
+    z-index: 2;
+}
+
+#link1Shadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -160%);
+    z-index: 2;
+}
+
+#link2Shadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, 25%);
+    z-index: 2;
+}
+
+#link3Shadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, 210%);
+    z-index: 2;
+}
+
+#link4Shadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, 395%);
+    z-index: 2;
+}
+
+#callButton {
+    background: rgb(255, 255, 255); /* Why are you using a browser that doesn't support RGBa? */
+    opacity: 0; /* Why are you using a browser that doesn't support RGBa? */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    box-shadow: none;
+    min-width: 800px;
+    max-width: 800px;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    cursor: pointer;
+    z-index: 4;
+}
+
+#showInfoBox {
+    background: rgb(255, 255, 255); /* Why are you using a browser that doesn't support RGBa? */
+    opacity: .5; /* Why are you using a browser that doesn't support RGBa? */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    box-shadow: none;
+    min-width: 800px;
+    max-width: 800px;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -175%);
+    cursor: pointer;
+    z-index: 4;
+}
+
+#hideInfoBox {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48; 
+    position: flex;
+    float: right;
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    color: #ffffff;
+    font-size: 300% !important;
+    padding-right: .9rem;
+    padding-top: .5rem;
+    text-shadow: 
+        2px 1px 1px rgba(0, 0, 0, .5), /* Bottom */
+        /* -2px 2px 2px rgba(1, 96, 116, 1), Left */
+        2px 5px 5px rgba(0, 0, 0, .5); /* Right */
+        /* -2px -2px 2px rgba(1, 96, 116, 1); Top */
+    z-index: inherit;
+}
+
+#gogoInsta {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-250%, 325%);
+    scale: 20%;
+    z-index: 3;
+}
+
+/* ### Argos Info Popup ### */
+
+#argosInfoBox {
+    opacity: 0;
+}
+
+#argosInfoBox.fade {
+    background: rgb(0, 173, 189); /* Why are you using a browser that doesn't support RGBa? */
+    opacity: 1; /* Why are you using a browser that doesn't support RGBa? */
+    background: rgba(3, 128, 145, 1);
+    border-radius: 25px;
+    outline: .4rem rgba(0, 0, 0, 1);
+    outline-offset: -.2rem;
+    outline-style: dashed;
+    height: 675px;
+    overflow: hidden;
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3 ease-in-out;
+    z-index: 99;
+}
+
+hr.argsDiv {
+    border-top: .25rem rgb(1, 80, 90) dashed;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 100px;
+}
+
+#argosBoxH1 {
+    padding-left: 1rem;
+    padding-top: .4rem;
+    font-family: 'Nabla', cursive;
+    font-size: 225%;
+    text-shadow: 
+        2px 1px 1px rgba(0, 0, 0, .5), /* Bottom */
+        /* -2px 2px 2px rgba(1, 96, 116, 1), Left */
+        2px 5px 5px rgba(0, 0, 0, .5); /* Right */
+        /* -2px -2px 2px rgba(1, 96, 116, 1); Top */
+}
+
+#argosBoxH2 {
+    padding-left: 1rem;
+    padding-top: .4rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 105%;
+    max-width: 625px;
+    padding-bottom: .2rem;
+    color:rgb(255, 255, 255);
+}
+
+#argosBoxH3 {
+    padding-left: 1rem;
+    padding-top: .4rem;
+    font-family: 'Nabla', cursive;
+    font-weight: 500;
+    font-size: 130%;
+    max-width: 625px;
+    padding-bottom: .2rem;
+    color:rgb(255, 255, 255);
+    text-shadow: 
+        2px 1px 1px rgba(0, 0, 0, .5), /* Bottom */
+        /* -2px 2px 2px rgba(1, 96, 116, 1), Left */
+        2px 5px 5px rgba(0, 0, 0, .5); /* Right */
+        /* -2px -2px 2px rgba(1, 96, 116, 1); Top */
+    z-index: inherit;
+}
+
+span.increaseWeight {
+    font-weight: 600;
+}
+
+#argosParagraphText {
+    padding-left: 1rem;
+    padding-top: .1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 105%;
+    max-width: 625px;
+    color:rgb(255, 255, 255);
+}
+
+span.argosParagraphText {
+    text-decoration: underline;
+}
+
+#argosParagraphText a {
+    color: rgba(255, 224, 50, 1);
+    text-decoration: underline;
+}
+
+#argosParagraphText a:hover {
+    color: rgba(255, 224, 50, 1);
+    text-decoration: none;
+}
+
+#argosParagraphText a:visited {
+    color: rgba(255, 224, 50, 1);
+    text-decoration: underline;
+}
+
+span.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+    font-size: 85%;
+}
+
+/* ### Copyright and Footer Elements ###*/
+
+#copyrightBoxDesktop {
+    display: none;
+}
+
+span.copyrightDesktop {
+    display: none;
+}
+
+#copyrightBoxMobile {
+    border-radius: 25px;
+    min-width: 1150px;
+    max-width: 1150px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 49;
+}
+
+span.copyrightMobile {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 50;
+}
