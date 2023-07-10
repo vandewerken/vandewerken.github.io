@@ -722,7 +722,7 @@
         left: 50%;
         transform: translate(-50%, -175%);
         cursor: pointer;
-        z-index: 4;
+        z-index: 7;
     }
 
     #hideInfoBox {
