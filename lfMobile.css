@@ -74,7 +74,7 @@ h1 {
     font-family: 'Lobster', cursive; /* If Lobster isn't iOS friendly, use Carter One */ 
     color: rgba(255, 217, 0, 1);
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 7rem;
     text-shadow: 
         6px 4px 6px rgba(1, 106, 116, .5), /* Bottom */
