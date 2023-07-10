@@ -466,7 +466,7 @@
         background: rgb(239,56,151);
         background: linear-gradient(45deg, rgba(239,56,151,1) 0%, rgba(5,208,235,1) 50%, rgba(235,209,16,1) 100%); /* Hex codes: #ef3897, #05d0eb, #ebd110*/
         height: 100vh;
-        width: 95vw;
+        width: 100vw;
         border: none;
         overflow: hidden;
     }
