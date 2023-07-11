@@ -255,6 +255,7 @@ span.increaseWeight a {
     margin-top: 0%;
     transform: translate(2.5%, -35%) scale(1.5);
     transform-origin: 0 0;
+    padding-bottom: 1rem;
     z-index: 5;
 }
 
@@ -275,14 +276,20 @@ span.bioText a {
     text-decoration: none;
 }
 
+#copyrightBoxDesktop {
+    display: none;
+}
+
+span.copyrightDesktop {
+    display: none;
+}
+
 #copyrightBoxMobile {
     border-radius: 25px;
     min-width: 700px;
     margin: 0;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 49;
 }
 
@@ -291,12 +298,8 @@ span.copyrightMobile {
     font-weight: 300;
     color: #808080;
     margin: 0;
-    position: absolute;
     bottom: 25;
-    text-align: center;
-    transform: translate(16%, 0) scale(1.5);
     z-index: 50;
-    transform-origin: 0 0;
 }
 
 
@@ -330,6 +333,3 @@ span.copyrightDesktop {
     z-index: 2; */
     display: none;
 }
-
-/* ### Logos and links ### */
-
