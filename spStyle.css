@@ -1,0 +1,201 @@
+/* ### Global Settings ### */
+html, body {
+    background-color: #ffffff;
+    height: 100vh;
+    width: 95vw;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* ### Page Text ### */
+@font-face {
+    font-family: 'FashionVictim';
+    src: url('./media/sideProjects/FashionVictim.eot');
+    src: url('./media/sideProjects/FashionVictim.ttf') format('truetype'),
+        url('./media/sideProjects/FashionVictim.woff') format('woff'), 
+        url('./media/sideProjects/FashionVictim.woff2') format('woff2');
+}
+
+h1 {
+    position: absolute;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #000000;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, -175%);
+    z-index: 5;
+}
+
+#centerPlacard {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    max-height: 150px;
+    z-index: 1;
+}
+
+#beachhouseBox {
+    display: inline-flex;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    margin: 5px;
+    box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.5);
+    overflow: hidden;
+    z-index: 5;
+}
+
+#beachhouseBox:hover, #beachhouseBox:active {
+    background: #FCFF6B;
+    border-radius: inherit;
+    border-radius: 50px 50px 50px 50px;
+    width: 400px;
+}
+
+#beachhouseTextBox {
+    display: block;
+    position: relative;
+    height: 100px;
+    left: 115px;
+    top: 25%;
+    transform: translate(0%, -12%);
+}
+
+#beachhouseTextBox a {
+    display: block;
+}
+
+#beachhouseHeader {
+    font-family: 'FashionVictim';
+    font-size: 2.5rem;
+    text-align: center;
+    color: #63a52a;
+    vertical-align: middle;
+}
+
+#beachhouseHeader a, a:hover, a:visited {
+    color: #63a52a;
+    text-decoration: none;
+}
+
+#beachhouseSubheader {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    color: #6b6b6b;
+    vertical-align: middle;
+}
+
+#beachhouseSubheader a, a:hover, a:visited {
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+#image1 {
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+#sequinBox {
+    display: inline-flex;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    margin: 5px;
+    box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.5);
+    overflow: hidden;
+    z-index: 5;
+}
+
+#sequinBox:hover, #sequinBox:active {
+    background: #96d3ff;
+    border-radius: inherit;
+    border-radius: 50px 50px 50px 50px;
+    width: 400px;
+}
+
+#sequinTextBox {
+    position: relative;
+    height: 100px;
+    left: 115px;
+    top: 35%;
+    transform: translate(0%, -15%);
+}
+
+#sequinHeader {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000000;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+#sequinHeader a, a:hover, a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+#sequinSubheader {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    color: #000000;
+    vertical-align: middle;
+}
+
+#sequinSubheader a, a:hover, a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+#image2 {
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+#sequinHeader a, a:hover, a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* ### Footer objects ### */
+#copyrightBoxDesktop {
+    border-radius: 25px;
+    min-width: 500px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 49;
+}
+
+span.copyrightDesktop {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 50;
+}
