@@ -245,7 +245,7 @@ span.copyrightMobile {
     bottom: 0;
     top: 50%;
     left: 50%;
-    transform: translate(-850%, -110%);
+    transform: translate(-850%, -235%);
     z-index: 3;
 }
 
@@ -256,7 +256,29 @@ span.copyrightMobile {
     bottom: 0;
     top: 50%;
     left: 50%;
-    transform: translate(-850%, 15%);
+    transform: translate(-850%, -110%);
+    z-index: 3;
+}
+
+#dayThreads {
+    max-width: 45px; 
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-940%, 15%);
+    z-index: 3;
+}
+
+#dayBluesky {
+    max-width: 45px; 
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-940%, 140%);
     z-index: 3;
 }
 

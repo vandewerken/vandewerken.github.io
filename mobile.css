@@ -196,6 +196,14 @@ span.copyrightMobile {
     display: none;
 }
 
+#dayThreads {
+    display: none;
+}
+
+#dayBluesky {
+    display: none;
+}
+
 #nightBio {
     display: none;
 }
