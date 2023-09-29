@@ -241,6 +241,16 @@ span.increaseWeight a {
     font-weight: 500;
 }
 
+span.bigIncreaseWeight {
+    font-weight: 500;
+    font-size: 125%;
+}
+
+span.bigIncreaseWeight a {
+    font-weight: 500;
+    font-size: 125%;
+}
+
 .bioTextBoxOpacity {
     background: rgba(230, 165, 179, 0) /* Increase the last number to decrease transparency - currently this isn't being used because of the use of #headerBox */
 }
