@@ -196,10 +196,6 @@ span.copyrightMobile {
     display: none;
 }
 
-#dayThreads {
-    display: none;
-}
-
 #dayBluesky {
     display: none;
 }
@@ -209,6 +205,10 @@ span.copyrightMobile {
 }
 
 #nightInsta {
+    display: none;
+}
+
+#nightThreads {
     display: none;
 }
 
