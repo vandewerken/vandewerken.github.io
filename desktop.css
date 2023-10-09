@@ -282,7 +282,7 @@ span.copyrightMobile {
 
 #nightBio {
     max-width: 45px; 
-    transform: translate(840%, -235%);
+    transform: translate(840%, -110%);
     margin: 0;
     position: absolute;
     bottom: 0;
@@ -293,7 +293,7 @@ span.copyrightMobile {
 
 #nightInsta {
     max-width: 45px; 
-    transform: translate(840%, -110%);
+    transform: translate(840%, 20%);
     margin: 0;
     position: absolute;
     bottom: 0;
@@ -302,7 +302,7 @@ span.copyrightMobile {
     z-index: 3;
 }
 
-#nightThreads {
+/* #nightThreads {
     max-width: 45px; 
     margin: 0;
     position: absolute;
@@ -322,4 +322,4 @@ span.copyrightMobile {
     left: 50%;
     transform: translate(840%, 140%);
     z-index: 3;
-}
+}*/
