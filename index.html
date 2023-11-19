@@ -2,18 +2,17 @@
 <html>
     <head>
         <link rel='shortcut icon' href='./media/favicon.ico' type='image/x-icon'/>
-        <link rel='stylesheet' media='screen and (min-width: 1125px)' href='./desktop.css' />
-        <link rel='stylesheet' media='screen and (max-width: 1125px)' href='./mobile.css' />
+        <link rel='stylesheet' href='./v2.css' />
         <title>Christian VdW</title>
-        <meta name='description' content='Professional and creative portfolio for Christian Van de Werken'>
-        <meta property='og:title' content='CVdW Portfolio'>
+        <meta name='description' content='Professional and creative bio for Christian Van de Werken'>
+        <meta property='og:title' content='CVdW Bio'>
         <meta property='og:type' content='website'>
         <meta property='og:url' content='https://werken.com'>
         <meta property='og:image' content=''>  
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bodoni+Moda&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+        <script src="ticker.js"></script>
     </head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JC3LYSSXQ2"></script>
@@ -25,81 +24,60 @@
         gtag('config', 'G-JC3LYSSXQ2');
     </script>
     <body>
-        <ul class='menu' media='screen and (max-width: 850px)'>
-            <li><a class='menuSectionDay'>day</a></li>
-            <li><a class='menuItemDay' href='https://linkedin.com/in/ChristianVdW/'>linkedin</a></li>
-            <li><a class='menuItemDay' href='https://github.com/vandewerken/'>github</a></li>
-            <li><a class='menuItemDay' href='https://bsky.app/profile/therealvdw.bsky.social'>bluesky</a></li>
-            <li><a class='menuSectionNight'>night</a></li>
-            <li><a class='menuItemNight' href='./bio.html'>bio</a></li>
-            <li><a class='menuItemNight' href='https://www.instagram.com/werkendesign/'>instagram</a></li>
-        </ul>
-        <button class='hamburger'>
-            <i class='menuIcon material-icons'>menu</i>
-            <i class='closeIcon material-icons'>close</i>
-        </button>
-        <script>
-            const menu = document.querySelector(".menu");
-            const menuItems = document.querySelectorAll(".menuItem");
-            const hamburger = document.querySelector(".hamburger");
-            const closeIcon = document.querySelector(".closeIcon");
-            const menuIcon = document.querySelector(".menuIcon");
-
-            closeIcon.style.display = "none"; 
-            
-            function toggleMenu() {
-                if (menu.classList.contains("showMenu")) {
-                    menu.classList.remove("showMenu");
-                    closeIcon.style.display = "none";
-                    menuIcon.style.display = "block";
-                } else {
-                    menu.classList.add("showMenu");
-                    closeIcon.style.display = "block";
-                    menuIcon.style.display = "none";
-                }
-            }
-
-            hamburger.addEventListener("click", toggleMenu);
-
-            menuItems.forEach( 
-                function(menuItem) { 
-                    menuItem.addEventListener("click", toggleMenu);
-                }
-            )
-        </script>
-        
-        <div><img src='./media/frame.png' class='backgroundFrame' media='screen and (max-width: 850px)'></div>
-        <div><img src='./media/middleDivider.png' class='middleDivider'></div>
-        <a href="https://linkedin.com/in/ChristianVdW/" target="_blank"><img src='./media/linkedin_gray.png' id='dayLinkedIn'></a>
-        <a href="https://github.com/vandewerken/" target="_blank"><img src='./media/github_gray.png' id='dayGithub'></a>
-        <a href="https://bsky.app/profile/therealvdw.bsky.social" target="_blank"><img src='./media/bluesky_gray.png' id='dayBluesky'></a>
-        <a href="./bio.html" target="_blank"><img src='./media/avatar.png' id='nightBio'></a>
-        <a href="https://www.instagram.com/werkendesign/" target="_blank"><img src='./media/insta_color.png' id='nightInsta'></a>
-        
-        <!-- ***When the bio page is built*** Make sure to change the bio icon link above, the hamburger menu link, and the "Night" image link to bio.werken.com and remove this line -->
-
-        <!-- For desktop size site-->
-        <p>
-            <span class='day'><a href='https://linkedin.com/in/ChristianVdW/'>day</a></span><span class='professional'><img src='./media/headshots/vdw-professional.png'/></span>
-        </p>
-        <p>
-            <span class='night'><a href='./bio.html'>night</a></span><span class='creative'><img src='./media/headshots/vdw.png'></span>
-        </p>
-        <span class='copyrightDesktop'><p style='margin: 0; font-weight: 700; display: inline'>&copy; </p><p style='margin:0; display: inline'>Christian Van de Werken <script>document.write(new Date().getFullYear())</script></p></span> 
-
-        <!-- For mobile site (max width of 1125px) -->
-        <p>
-            <span class='dayMobile'><a href='https://linkedin.com/in/ChristianVdW/'>day</a></span>
-        </p>
-        <p>
-            <span class='nightMobile'><a href='./bio.html'>night</a></span>
-        </p>
-        <span class='copyrightMobile'><p style='margin: 0; font-weight: 700; display: inline'>&copy; </p><p style='margin:0; display: inline'>Christian Van de Werken <script>document.write(new Date().getFullYear())</script></p></span> 
-        </p>
-    </body> 
-
-    <!--"Day side" icons by Neil Hainsworth from iconfinder.com - thank you, I love your work!
-        "Night side" icons by Kalash from iconfinder.com - thank you, you're super creative! Slava Ukraini!-->
-
+        <div class='bioImage'><img src='./media/headshots/vdw-whole.png'></div>
+        <!--<div class='bioImageFrame'></div>
+        <div class='bioImageFrameCutUpperRight'></div>
+        <div class='bioImageFrameCutBottomLeft'></div>
+        <div class='bioImageFrameCutUpperCover'></div> noooooot entirely crazy about the shape of this-->
+        <div id='headerPlacement'>
+            <h1>Christian Van de Werken</h1>
+            <!--<h2>Tech x day, art x night • Doting dog dad • Equal blend of David, Alexis, and Moira • Typical Aquarius • Always creating something cool @ cvdw.xyz • DC for now and NYC again someday...</h2>-->
+            <div id='ticker'>
+                <ul>
+                    <li>Tech x day, art x night • Doting dog dad • Equal blend of David, Alexis, and Moira • Typical Aquarius • Always creating something cool @ <a href="https://www.cvdw.xyz/" style="color: #006a80 !important; text-decoration: none !important; font-weight: 300 !important;" target="_blank">cvdw.xyz</a> • DC for now and NYC again someday...</li>
+                </ul>
+            </div>
+            <script>startTicker('ticker', {speed:10, delay:0});</script>
+        </div>
+        <div id='linkBoxDoNotExceed'>
+            <div id='LBCollection1' class='linkBoxCollection'>
+                <div class='linkBoxBottomFrame'></div>
+                <div class='bottomClipUpperRight'></div>
+                <div class='bottomClipBottomLeft'></div>
+                <div class='linkBoxTopFrame'>
+                    <div class='linkBoxText'>
+                        <a href='https://github.com/vandewerken' class='buttonLinkStyleControl'>Github</a>
+                    </div>
+                </div>
+            </div>
+            <div id='LBCollection2' class='linkBoxCollection'>
+                <div class='linkBoxBottomFrame'></div>
+                <div class='bottomClipUpperRight'></div>
+                <div class='bottomClipBottomLeft'></div>
+                <div class='linkBoxTopFrame'>
+                    <div class='linkBoxText'>
+                        <a href='https://www.linkedin.com/in/christianvdw/' class='buttonLinkStyleControl'>LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div id='LBCollection3' class='linkBoxCollection'>
+                <div class='linkBoxBottomFrame'></div>
+                <div class='bottomClipUpperRight'></div>
+                <div class='bottomClipBottomLeft'></div>
+                <div class='linkBoxTopFrame'>
+                    <div class='linkBoxText'>
+                        <a href='./sideProjects.html' class='buttonLinkStyleControl'>CVDW Side Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class='instaIcon'><a href='https://www.instagram.com/werkendesign/'><img src='./media/instaWire.png'></a></div>
+            <div class='blueskyIcon'><a href='https://bsky.app/profile/therealvdw.bsky.social'><img src='./media/blueskyWire.png'></a></div>
+        </div>
+        <!-- <div id='centerDivider'></div> Only here for alignment testing --> 
+        <span class='copyrightDesktop'><p style='margin: 0; font-weight: 400; display: inline'>&copy; </p><p style='margin:0; display: inline'>Christian Van de Werken <script>document.write(new Date().getFullYear())</script></p></span>
+    </body>
+    <!--
+        Big thank you to Vincy at phppot.com for the ticker code!
+        Big ups to Studio Armstrong for the continuous wire icons: https://www.studioarmstrong.com/
+    -->
 </html>
-

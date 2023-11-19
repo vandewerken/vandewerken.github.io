@@ -18,9 +18,10 @@ html, body {
 
 h1 {
     position: absolute;
-    font-family: 'Amatic SC', cursive;
-    font-size: 3rem;
-    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300;
     color: #000000;
     justify-content: center;
     left: 50%;
