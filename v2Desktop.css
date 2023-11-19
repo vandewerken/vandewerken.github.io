@@ -1,26 +1,16 @@
 /* ### z-index ###
     
+    Currently this is done based on the order the element is called in index - the only explicit placement of z positioning is .bioImage
 
-
-
-
-    backgroundFrame         1       (Big Graphics)
-    middleDivider           50      (Big Graphics)
-    professional + hover:   2       (Big Graphics)
-    creative + hover:       2       (Big Graphics)
-
-    day and day a           50      (Text)
-    night and night a       50      (Text)
-    day icons               3       (Logos and Links)
-    night icons             3       (Logos and Links)
 */
 
 /* ### Global ### */ 
 body {
     background-color: #EFF5E9; /* #EFF5E9 is Vert Fizz! I also like, in order of preference: #D8DBE2 (Blue Pale), #E6DFD7 (Beton), #E2E5DC (Gris Neve), and #DDDAD5 (Pearl Gray) */ 
+    overflow: hidden;
 }
 
-@media screen and (orientation: landscape) and (max-width: 1125px) {
+/* @media screen and (orientation: landscape) and (max-width: 1125px) {
     html {
         transform: rotate(-90deg);
         transform-origin: left top;
@@ -31,7 +21,7 @@ body {
         top: 100%;
         left: 0;
     }
-}
+} Doesn't matter on non-mobile devices */
 
 /* ### Images ### */ 
 
@@ -41,7 +31,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -210%);
+    transform: translate(-50%, -425px); /* -210%*/ 
     max-width: 200px;
     max-height: 200px;
     border-radius: 50%;
@@ -139,7 +129,7 @@ body {
     left: 50%;
     top: 50%;
     max-width: 700px;
-    transform: translate(-50%, -175%);
+    transform: translate(-50%, -200px); /* -175% */
 }
 
 h1 {
@@ -169,7 +159,7 @@ h2 {
     max-width: 618px;
     position: relative;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0px); /* 0 */
 }
 
 /* ### Buttons and links ### */ 
@@ -181,7 +171,7 @@ h2 {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50px); /* 0% */
 }
 
 #LBCollection1 {

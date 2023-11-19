@@ -1,0 +1,268 @@
+/* ### z-index ###
+    
+    Currently this is done based on the order the element is called in index - the only explicit placement of z positioning is .bioImage
+
+*/
+
+/* ### Global ### */ 
+body {
+    background-color: #EFF5E9; /* #EFF5E9 is Vert Fizz! I also like, in order of preference: #D8DBE2 (Blue Pale), #E6DFD7 (Beton), #E2E5DC (Gris Neve), and #DDDAD5 (Pearl Gray) */ 
+    overflow: hidden;
+}
+
+@media screen and (orientation: landscape) {
+    html {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        height: 100vw;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+} 
+
+/* ### Images ### */ 
+
+.bioImage {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -500px) scale(150%); /* -210%*/ 
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 
+        6px 4px 15px rgba(0, 0, 0, .25), /* Bottom */
+        /* -2px 2px 2px rgba(1, 96, 116, 1), Left */
+        6px 10px 15px rgba(0, 0, 0, .25); /* Right */
+        /* -2px -2px 2px rgba(1, 96, 116, 1); Top */;
+    z-index: 50 !important;
+}
+
+.bioImageFrame {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -192%);
+    color: #EFF5E9;
+    width: 215px;
+    height: 215px;
+    border: solid 5px #D1C1B3;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.bioImageFrameCutUpperRight {
+    background: #EFF5E9;
+    height: 100px;
+    width: 100px;
+    transform: rotate(45deg) translate(-250%, -360%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.bioImageFrameCutBottomLeft {
+    background: #EFF5E9;
+    height: 300px;
+    width: 100px;
+    transform: translate(-160%, -150%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.bioImageFrameCutUpperCover {
+    background: #EFF5E9;
+    height: 100px;
+    width: 300px;
+    transform: translate(-50%, -450%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.bioImage img {
+    display: inline;
+    margin: 0 auto;
+    position: relative;
+    transform: translate(-34.6%, -37.5%) scale(31%) rotate(10deg); 
+}
+
+.instaIcon {
+    position: absolute;
+    scale: 13%;
+    left: 1%;
+    transform: translate(-75px, 1800px); /* Images won't listen to explicit max size spec - this is hacky but yolo... GTJD */ 
+}
+
+.blueskyIcon {
+    position: absolute;
+    scale: 14%;
+    left: 16.5%;
+    transform: translate(75px, 1675px);
+}
+
+#centerDivider {
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: red;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 0;
+    margin: 0;
+}
+
+/* ### Text ### */ 
+
+#headerPlacement {
+    position: absolute;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    width: 800px;
+    transform: translate(-50%, -200px); /* -175% */
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    opacity: 1;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 375%;
+}
+
+h2 {
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+    opacity: 1;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-size: 175%;
+}
+
+#ticker {
+    padding-top: 15px;
+    font-size: 250%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    max-width: 618px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0px); /* 0 */
+}
+
+/* ### Buttons and links ### */ 
+
+#linkBoxDoNotExceed {
+    padding-top: 15px;
+    height: 600px;
+    width: 618px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50px); /* 0% */
+}
+
+#LBCollection1 {
+    position: absolute;
+    left: 309px;
+    transform: translate(-300px, 0%) scale(150%);
+}
+
+#LBCollection2 {
+    position: absolute;
+    left: 309px;
+    transform: translate(-300px, 150px) scale(150%);
+}
+
+#LBCollection3 {
+    position: absolute;
+    left: 309px;
+    transform: translate(-300px, 300px) scale(150%);
+}
+
+.linkBoxBottomFrame {
+    height: 60px;
+    width: 400px;
+    border-bottom: solid 5px #D1C1B3;
+    border-right: solid 5px #D1C1B3;
+    position: absolute;
+    transform: translate(6px, 6px);
+}
+
+.bottomClipUpperRight {
+    background: #EFF5E9;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg) translate(0, 0);
+    position: absolute;
+    left: 407px;
+}
+
+.bottomClipBottomLeft {
+    background: #EFF5E9;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg) translate(0, 0);
+    position: absolute;
+    left: -1px;
+    top: 66px;
+}
+
+.linkBoxTopFrame {
+    height: 60px;
+    width: 400px;
+    background: #FFFFFF;
+    position: absolute;
+}
+
+.linkBoxText {
+    position: inherit; 
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.buttonLinkStyleControl {
+    color: #006a80;
+    text-decoration: none;
+}
+
+.buttonLinkStyleControl:visited {
+    color: #006a80;
+    text-decoration: none;
+}
+
+.buttonLinkStyleControl:hover {
+    color: #E6A5B3;
+    text-decoration: none;
+}
+
+/* ### Copyright and footer ### */ 
+
+span.copyrightDesktop {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 150%;
+    color: #969696;
+    margin: 0;
+    position: absolute;
+    bottom: 1.5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
